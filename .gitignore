@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.sqlite3
+.env
+node_modules/
+dist/
+.work/
+test-results/
+.ruff_cache/

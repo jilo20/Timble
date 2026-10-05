@@ -1,0 +1,7 @@
+program_code,program_name,max_year_level,is_active
+BSIT,Bachelor of Science in Information Technology,4,true
+BSCS,Bachelor of Science in Computer Science,4,true
+BSGD,Bachelor of Science in Game Development,4,true
+BSEMC,Bachelor of Science in Entertainment and Multimedia Computing,4,true
+BSIS,Bachelor of Science in Information Systems,4,true
+ACT,Associate in Computer Technology,3,true

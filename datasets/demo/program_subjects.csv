@@ -1,0 +1,3 @@
+program_code,subject_code,year_level,units,lecture_periods,lab_periods,lecture_meetings_per_week,lab_meetings_per_week,lecture_room_type,lab_room_type,is_elective,is_active
+DEMO-CS,DEMO-FOUND,1,3,1,0,1,0,LECTURE,LAB,False,True
+DEMO-CS,DEMO-ALG,2,3,2,3,1,1,LECTURE,LAB,False,True

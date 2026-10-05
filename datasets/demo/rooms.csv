@@ -1,0 +1,4 @@
+room_code,room_type,capacity,is_active
+DEMO-L30,LECTURE,30,True
+DEMO-L40,LECTURE,40,True
+DEMO-C30,LAB,30,True

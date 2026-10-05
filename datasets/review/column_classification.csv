@@ -1,0 +1,65 @@
+original_dataset,column,classification,disposition
+Dataset - Curriculum.csv,curriculum_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - Curriculum.csv,effective_start,DERIVE,Select the numerically latest source curriculum for each program.
+Dataset - Curriculum.csv,effective_end,REMOVE,Not a revised runtime field; retained in review or source inventory where needed.
+Dataset - Curriculum.csv,program_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - Curriculum.csv,program_code,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - curriculum_subject.csv,curriculum_subject_id,REMOVE,Not a revised runtime field; retained in review or source inventory where needed.
+Dataset - curriculum_subject.csv,curriculum_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - curriculum_subject.csv,subject_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - curriculum_subject.csv,subject_code,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - curriculum_subject.csv,curriculum_subject_name,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - curriculum_subject.csv,units,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - curriculum_subject.csv,lec_hours,KEEP,Retain as review evidence/candidate; academic mapping is not confirmed.
+Dataset - curriculum_subject.csv,lab_hours,KEEP,Retain as review evidence/candidate; academic mapping is not confirmed.
+Dataset - curriculum_subject.csv,subject_type,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - curriculum_subject.csv,prerequisite_text,KEEP,Retain as review evidence/candidate; academic mapping is not confirmed.
+Dataset - curriculum_subject.csv,year_level_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - curriculum_subject.csv,semester_id,REMOVE,Excluded from revised runtime schema; original retained in audit when relevant.
+Dataset - curriculum_subject.csv,requirement_type,KEEP,Retain as review evidence/candidate; academic mapping is not confirmed.
+Dataset - curriculum_subject.csv,elective_group_id,REMOVE,Excluded from revised runtime schema; original retained in audit when relevant.
+Dataset - curriculum_subject.csv,status,TRANSFORM,"Normalize controlled values, boolean activity, or renamed room_code."
+Dataset - Faculty.csv,faculty_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - Faculty.csv,first_name,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Faculty.csv,last_name,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Faculty.csv,middle_initial,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Faculty.csv,faculty_type,TRANSFORM,"Normalize controlled values, boolean activity, or renamed room_code."
+Dataset - Faculty.csv,availability_status,REMOVE,Excluded from revised runtime schema; original retained in audit when relevant.
+Dataset - Faculty.csv,status,TRANSFORM,"Normalize controlled values, boolean activity, or renamed room_code."
+Dataset - Faculty.csv,max_teaching_load,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - FacultyExpertise.csv,expertise_id,REMOVE,Not a revised runtime field; retained in review or source inventory where needed.
+Dataset - FacultyExpertise.csv,faculty_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - FacultyExpertise.csv,subject_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - FacultyExpertise.csv,subject_name,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - FacultyExpertise.csv,faculty_name,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Programs.csv,program_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - Programs.csv,program_code,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Programs.csv,program_name,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Programs.csv,max_year_level,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Room.csv,room_name,TRANSFORM,"Normalize controlled values, boolean activity, or renamed room_code."
+Dataset - Room.csv,room_type,TRANSFORM,"Normalize controlled values, boolean activity, or renamed room_code."
+Dataset - Room.csv,capacity,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Room.csv,status,TRANSFORM,"Normalize controlled values, boolean activity, or renamed room_code."
+Dataset - semester.csv,semester_id,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - semester.csv,semester_name,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - semester.csv,status,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - semester.csv,semester_order,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - subjects.csv,subject_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - subjects.csv,subject_name,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - subjects.csv,subject_description,REMOVE,Excluded from revised runtime schema; original retained in audit when relevant.
+Dataset - subjects.csv,is_active,KEEP,Preserved verbatim in audit/review evidence.
+Dataset - Timeslot.csv,ti,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,day_pattern,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,monday_time,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,tuesday_time,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,wednesday_time,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,thursday_time,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,friday_time,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,saturday_time,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,total_units,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,total_hrs,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - Timeslot.csv,subject_type,REMOVE,Obsolete entity excluded from all revised runtime datasets.
+Dataset - year_level.csv,year_level_id,TRANSFORM,"Resolve source relationship, flatten current curriculum, or derive documented stable import key; source IDs are not new database IDs."
+Dataset - year_level.csv,year_level_name,REMOVE,Not a revised runtime field; retained in review or source inventory where needed.
+Dataset - year_level.csv,year_level_order,REMOVE,Not a revised runtime field; retained in review or source inventory where needed.
+Dataset - year_level.csv,status,TRANSFORM,"Normalize controlled values, boolean activity, or renamed room_code."

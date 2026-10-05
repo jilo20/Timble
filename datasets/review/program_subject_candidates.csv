@@ -1,0 +1,362 @@
+program_code,subject_code,year_level,units,lecture_periods,lab_periods,lecture_meetings_per_week,lab_meetings_per_week,lecture_room_type,lab_room_type,is_elective,is_active
+BSGD,CMP,1,3,,,,,,,false,true
+BSGD,DRAW,1,3,,,,,,,false,true
+BSGD,I-COMP,1,3,,,,,,,false,true
+BSGD,PROG 1,1,3,,,,,,,false,true
+BSGD,GE MMW,1,3,,,,,,,false,true
+BSGD,EP 1,1,3,,,,,,,false,true
+BSGD,REED 1,1,3,,,,,,,false,true
+BSGD,PATHFIT 1,1,2,,,,,,,false,true
+BSGD,NSTP 1,1,3,,,,,,,false,true
+BSGD,GUIDANCE 1,1,1,,,,,,,false,true
+BSGD,2D ANIM,1,3,,,,,,,false,true
+BSGD,DISCRETE,1,3,,,,,,,false,true
+BSGD,DVA,1,3,,,,,,,false,true
+BSGD,GMATH,1,3,,,,,,,false,true
+BSGD,PROG 2,1,3,,,,,,,false,true
+BSGD,SCRIPT,1,3,,,,,,,false,true
+BSGD,REED 2,1,3,,,,,,,false,true
+BSGD,PATHFIT 2,1,2,,,,,,,false,true
+BSGD,NSTP 2,1,3,,,,,,,false,true
+BSGD,GUIDANCE 2,1,1,,,,,,,false,true
+BSGD,3DUVMT,2,3,,,,,,,false,true
+BSGD,DATASTRUCT,2,3,,,,,,,false,true
+BSGD,DSOUND,2,3,,,,,,,false,true
+BSGD,GDD 1,2,3,,,,,,,false,true
+BSGD,IM 1,2,3,,,,,,,false,true
+BSGD,EP 2,2,3,,,,,,,false,true
+BSGD,GE STS,2,3,,,,,,,false,true
+BSGD,REED 3,2,3,,,,,,,false,true
+BSGD,PATHFIT 3,2,2,,,,,,,false,true
+BSGD,3D ANIM,2,3,,,,,,,false,true
+BSGD,GDD 2,2,3,,,,,,,false,true
+BSGD,GPHYSICS,2,3,,,,,,,false,true
+BSGD,GPROG 1,2,3,,,,,,,false,true
+BSGD,OOP,2,3,,,,,,,false,true
+BSGD,GE PC,2,3,,,,,,,false,true
+BSGD,GE ET,2,3,,,,,,,false,true
+BSGD,REED 4,2,3,,,,,,,false,true
+BSGD,PATHFIT 4,2,2,,,,,,,false,true
+BSGD,HCI,2,3,,,,,,,false,true
+BSGD,GPROG 2,2,3,,,,,,,false,true
+BSGD,STATCOM,2,3,,,,,,,false,true
+BSGD,APPSDEV 1,3,3,,,,,,,false,true
+BSGD,GDD 3,3,3,,,,,,,false,true
+BSGD,GPROG 3,3,3,,,,,,,false,true
+BSGD,GRAPHPROG,3,3,,,,,,,false,true
+BSGD,RESEARCH,3,3,,,,,,,false,true
+BSGD,GE AA,3,3,,,,,,,false,true
+BSGD,GE UTS,3,3,,,,,,,false,true
+BSGD,GE RPH,3,3,,,,,,,false,true
+BSGD,CAPSTONE 1,3,3,,,,,,,false,true
+BSGD,FREE ELEC 1,3,3,,,,,,,true,true
+BSGD,GAMEAI,3,3,,,,,,,false,true
+BSGD,GPROD,3,3,,,,,,,false,true
+BSGD,MRGAME,3,3,,,,,,,false,true
+BSGD,NET 1,3,3,,,,,,,false,true
+BSGD,SOFTENG 1,3,3,,,,,,,false,true
+BSGD,GE TCW,3,3,,,,,,,false,true
+BSGD,MULTIGAME,3,3,,,,,,,false,true
+BSGD,OS,3,3,,,,,,,false,true
+BSGD,SP,3,3,,,,,,,false,true
+BSGD,CAPSTONE 2,4,3,,,,,,,false,true
+BSGD,ITREVIEW,4,3,,,,,,,false,true
+BSGD,TECHNO,4,3,,,,,,,false,true
+BSGD,FREE ELEC 2,4,3,,,,,,,true,true
+BSGD,RIZAL,4,3,,,,,,,false,true
+BSGD,PRAC,4,9,,,,,,,false,true
+BSGD,SEMTOUR,4,3,,,,,,,false,true
+BSIT,CMP,1,3,,,,,,,false,true
+BSIT,I-COMP,1,3,,,,,,,false,true
+BSIT,PROG 1,1,3,,,,,,,false,true
+BSIT,WEB,1,3,,,,,,,false,true
+BSIT,GE MMW,1,3,,,,,,,false,true
+BSIT,EP1,1,3,,,,,,,false,true
+BSIT,REED1,1,3,,,,,,,false,true
+BSIT,PATHFIT1,1,2,,,,,,,false,true
+BSIT,NSTP1,1,3,,,,,,,false,true
+BSIT,GUIDANCE1,1,1,,,,,,,false,true
+BSIT,DIGITAL,1,3,,,,,,,false,true
+BSIT,DISCRETE1,1,3,,,,,,,false,true
+BSIT,DVA,1,3,,,,,,,false,true
+BSIT,PROG2,1,3,,,,,,,false,true
+BSIT,QM,1,3,,,,,,,false,true
+BSIT,REED2,1,3,,,,,,,false,true
+BSIT,PATHFIT2,1,2,,,,,,,false,true
+BSIT,NSTP2,1,3,,,,,,,false,true
+BSIT,GUIDANCE2,1,1,,,,,,,false,true
+BSIT,DATASTRUCT,2,3,,,,,,,false,true
+BSIT,IM 1,2,3,,,,,,,false,true
+BSIT,NET1,2,3,,,,,,,false,true
+BSIT,PT,2,3,,,,,,,false,true
+BSIT,EP2,2,3,,,,,,,false,true
+BSIT,GE AA,2,3,,,,,,,false,true
+BSIT,GE STS,2,3,,,,,,,false,true
+BSIT,REED3,2,3,,,,,,,false,true
+BSIT,PATHFIT3,2,2,,,,,,,false,true
+BSIT,IM 2,2,3,,,,,,,false,true
+BSIT,NET2,2,3,,,,,,,false,true
+BSIT,OOP,2,3,,,,,,,false,true
+BSIT,PROFELEC1,2,3,,,,,,,true,true
+BSIT,SPELEC1,2,3,,,,,,,true,true
+BSIT,GE ET,2,3,,,,,,,false,true
+BSIT,GE PC,2,3,,,,,,,false,true
+BSIT,REED4,2,3,,,,,,,false,true
+BSIT,PATHFIT4,2,2,,,,,,,false,true
+BSIT,HCI,2,3,,,,,,,false,true
+BSIT,SP,2,3,,,,,,,false,true
+BSIT,STATCOM,2,3,,,,,,,false,true
+BSIT,APPSDEV 1,3,3,,,,,,,false,true
+BSIT,IAS1,3,3,,,,,,,false,true
+BSIT,IM 3,3,3,,,,,,,false,true
+BSIT,RESEARCH,3,3,,,,,,,false,true
+BSIT,PROFELEC2,3,3,,,,,,,true,true
+BSIT,SPELEC2,3,3,,,,,,,true,true
+BSIT,GE UTS,3,3,,,,,,,false,true
+BSIT,GE RPH,3,3,,,,,,,false,true
+BSIT,CAPSTONE1,3,3,,,,,,,false,true
+BSIT,IPT,3,3,,,,,,,false,true
+BSIT,SA,3,3,,,,,,,false,true
+BSIT,SOFTENG 1,3,3,,,,,,,false,true
+BSIT,FREEELEC1,3,3,,,,,,,true,true
+BSIT,PROFELEC3,3,3,,,,,,,true,true
+BSIT,SPELEC3,3,3,,,,,,,true,true
+BSIT,GE TCW,3,3,,,,,,,false,true
+BSIT,IAS2,3,3,,,,,,,false,true
+BSIT,OS,3,3,,,,,,,false,true
+BSIT,SIA,3,3,,,,,,,false,true
+BSIT,CAPSTONE2,4,3,,,,,,,false,true
+BSIT,ITREVIEW,4,3,,,,,,,false,true
+BSIT,FREEELEC2,4,3,,,,,,,true,true
+BSIT,TECHNO,4,3,,,,,,,false,true
+BSIT,RIZAL,4,3,,,,,,,false,true
+BSIT,PRAC,4,9,,,,,,,false,true
+BSIT,SEMTOUR,4,3,,,,,,,false,true
+BSCS,CMP,1,3,,,,,,,false,true
+BSCS,I-COMP,1,3,,,,,,,false,true
+BSCS,PROG 1,1,3,,,,,,,false,true
+BSCS,WEB,1,3,,,,,,,false,true
+BSCS,GE MMW,1,3,,,,,,,false,true
+BSCS,EP 1,1,3,,,,,,,false,true
+BSCS,REED 1,1,3,,,,,,,false,true
+BSCS,PATHFIT 1,1,2,,,,,,,false,true
+BSCS,NSTP 1,1,3,,,,,,,false,true
+BSCS,GUIDANCE 1,1,1,,,,,,,false,true
+BSCS,ADV CMP,1,3,,,,,,,false,true
+BSCS,DIGITAL,1,3,,,,,,,false,true
+BSCS,DISCRETE 1,1,3,,,,,,,false,true
+BSCS,DVA,1,3,,,,,,,false,true
+BSCS,PROG 2,1,3,,,,,,,false,true
+BSCS,QM,1,3,,,,,,,false,true
+BSCS,REED 2,1,3,,,,,,,false,true
+BSCS,PATHFIT 2,1,2,,,,,,,false,true
+BSCS,NSTP 2,1,3,,,,,,,false,true
+BSCS,GUIDANCE 2,1,1,,,,,,,false,true
+BSCS,COMP-ORG 1,2,3,,,,,,,false,true
+BSCS,DATASTRUCT,2,3,,,,,,,false,true
+BSCS,DISCRETE 2,2,3,,,,,,,false,true
+BSCS,IM 1,2,3,,,,,,,false,true
+BSCS,EP 2,2,3,,,,,,,false,true
+BSCS,GE STS,2,3,,,,,,,false,true
+BSCS,GE AA,2,3,,,,,,,false,true
+BSCS,REED 3,2,3,,,,,,,false,true
+BSCS,PATHFIT 3,2,2,,,,,,,false,true
+BSCS,ALGO,2,3,,,,,,,false,true
+BSCS,INTSYS,2,3,,,,,,,false,true
+BSCS,NET 1,2,3,,,,,,,false,true
+BSCS,OOP,2,3,,,,,,,false,true
+BSCS,PROF ELEC 1,2,3,,,,,,,true,true
+BSCS,GE ET,2,3,,,,,,,false,true
+BSCS,GE PC,2,3,,,,,,,false,true
+BSCS,REED 4,2,3,,,,,,,false,true
+BSCS,PATHFIT 4,2,2,,,,,,,false,true
+BSCS,HCI,2,3,,,,,,,false,true
+BSCS,SP,2,3,,,,,,,false,true
+BSCS,STATCOM,2,3,,,,,,,false,true
+BSCS,APPSDEV 1,3,3,,,,,,,false,true
+BSCS,COMPVIS,3,3,,,,,,,false,true
+BSCS,IAS 1,3,3,,,,,,,false,true
+BSCS,NLP,3,3,,,,,,,false,true
+BSCS,PROF ELEC 2,3,3,,,,,,,true,true
+BSCS,RESEARCH,3,3,,,,,,,false,true
+BSCS,GE UTS,3,3,,,,,,,false,true
+BSCS,GE RPH,3,3,,,,,,,false,true
+BSCS,AUTOMATA,3,3,,,,,,,false,true
+BSCS,FREE ELEC 1,3,3,,,,,,,true,true
+BSCS,IPT,3,3,,,,,,,false,true
+BSCS,ML,3,3,,,,,,,false,true
+BSCS,PROF ELEC 3,3,3,,,,,,,true,true
+BSCS,SOFTENG 1,3,3,,,,,,,false,true
+BSCS,THESIS 1,3,3,,,,,,,false,true
+BSCS,GE TCW,3,3,,,,,,,false,true
+BSCS,SOFTENG 2,3,3,,,,,,,false,true
+BSCS,OS,3,3,,,,,,,false,true
+BSCS,PL,3,3,,,,,,,false,true
+BSCS,TECHNO,4,3,,,,,,,false,true
+BSCS,THESIS 2,4,3,,,,,,,false,true
+BSCS,ITREVIEW,4,3,,,,,,,false,true
+BSCS,FREE ELEC 2,4,3,,,,,,,true,true
+BSCS,RIZAL,4,3,,,,,,,false,true
+BSCS,PRAC,4,6,,,,,,,false,true
+BSCS,SEMTOUR,4,3,,,,,,,false,true
+BSEMC,I-COMP,1,3,,,,,,,false,true
+BSEMC,PROG 1,1,3,,,,,,,false,true
+BSEMC,EMC CORE 1,1,3,,,,,,,false,true
+BSEMC,CMP,1,3,,,,,,,false,true
+BSEMC,GE MMW,1,3,,,,,,,false,true
+BSEMC,EP 1,1,3,,,,,,,false,true
+BSEMC,REED 1,1,3,,,,,,,false,true
+BSEMC,PE 1,1,2,,,,,,,false,true
+BSEMC,NSTP 1,1,3,,,,,,,false,true
+BSEMC,GUIDANCE 1,1,1,,,,,,,false,true
+BSEMC,EMC CORE 2,1,3,,,,,,,false,true
+BSEMC,PROG2,1,3,,,,,,,false,true
+BSEMC,DVA,1,3,,,,,,,false,true
+BSEMC,DISCRETE 1,1,3,,,,,,,false,true
+BSEMC,GE RPH,1,3,,,,,,,false,true
+BSEMC,DIGITAL,1,3,,,,,,,false,true
+BSEMC,REED 2,1,3,,,,,,,false,true
+BSEMC,PE 2,1,2,,,,,,,false,true
+BSEMC,NSTP 2,1,3,,,,,,,false,true
+BSEMC,GUIDANCE 2,1,1,,,,,,,false,true
+BSEMC,DATASTRUCT,2,3,,,,,,,false,true
+BSEMC,EMC CORE 3,2,3,,,,,,,false,true
+BSEMC,EMC CORE 4,2,3,,,,,,,false,true
+BSEMC,EMC SP 1,2,3,,,,,,,false,true
+BSEMC,GE PC,2,3,,,,,,,false,true
+BSEMC,GE TCW,2,3,,,,,,,false,true
+BSEMC,GE AA,2,3,,,,,,,false,true
+BSEMC,REED 3,2,3,,,,,,,false,true
+BSEMC,PE 3,2,2,,,,,,,false,true
+BSEMC,OOP,2,3,,,,,,,false,true
+BSEMC,IM 1,2,3,,,,,,,false,true
+BSEMC,EMC CORE 5,2,3,,,,,,,false,true
+BSEMC,EMC SP 2,2,3,,,,,,,false,true
+BSEMC,GE STS,2,3,,,,,,,false,true
+BSEMC,GE ET,2,3,,,,,,,false,true
+BSEMC,GE UTS,2,3,,,,,,,false,true
+BSEMC,REED 4,2,3,,,,,,,false,true
+BSEMC,PE 4,2,2,,,,,,,false,true
+BSEMC,EMC CORE 6,2,3,,,,,,,false,true
+BSEMC,EMC CORE 7,2,3,,,,,,,false,true
+BSEMC,EMC CORE 8,2,3,,,,,,,false,true
+BSEMC,APPSDEV 1,3,3,,,,,,,false,true
+BSEMC,NET 1,3,3,,,,,,,false,true
+BSEMC,EMC CORE 9,3,3,,,,,,,false,true
+BSEMC,EMC SP 3,3,3,,,,,,,false,true
+BSEMC,EMC SP 4,3,3,,,,,,,false,true
+BSEMC,RESEARCH,3,3,,,,,,,false,true
+BSEMC,SOFTENG,3,3,,,,,,,false,true
+BSEMC,OS,3,3,,,,,,,false,true
+BSEMC,EMC SP 5,3,3,,,,,,,false,true
+BSEMC,EMC SP 6,3,3,,,,,,,false,true
+BSEMC,EMC SP 7,3,3,,,,,,,false,true
+BSEMC,EMC SP 8,3,3,,,,,,,false,true
+BSEMC,PROF ELEC 1,3,3,,,,,,,true,true
+BSEMC,CAPSTONE 1,3,3,,,,,,,false,true
+BSEMC,RIZAL,3,3,,,,,,,false,true
+BSEMC,TECHNO,3,3,,,,,,,false,true
+BSEMC,SP,3,3,,,,,,,false,true
+BSEMC,EMC SP 9,3,3,,,,,,,false,true
+BSEMC,CAPSTONE 2,4,3,,,,,,,false,true
+BSEMC,ITREVIEW,4,3,,,,,,,false,true
+BSEMC,PROF ELEC 2,4,3,,,,,,,true,true
+BSEMC,PROF ELEC 3,4,3,,,,,,,true,true
+BSEMC,SEMTOUR,4,3,,,,,,,false,true
+BSEMC,PRAC,4,9,,,,,,,false,true
+ACT,I-COMP,1,3,,,,,,,false,true
+ACT,PROG 1,1,3,,,,,,,false,true
+ACT,SPEC 1,1,3,,,,,,,false,true
+ACT,GE MMW,1,3,,,,,,,false,true
+ACT,EP 1,1,3,,,,,,,false,true
+ACT,REED 1,1,3,,,,,,,false,true
+ACT,PATHFIT 1,1,2,,,,,,,false,true
+ACT,NSTP 1,1,3,,,,,,,false,true
+ACT,GUIDANCE 1,1,1,,,,,,,false,true
+ACT,PROG 2,1,3,,,,,,,false,true
+ACT,SPEC 2,1,3,,,,,,,false,true
+ACT,SP,1,3,,,,,,,false,true
+ACT,GE PC,1,3,,,,,,,false,true
+ACT,REED 2,1,3,,,,,,,false,true
+ACT,PATHFIT 2,1,2,,,,,,,false,true
+ACT,NSTP 2,1,3,,,,,,,false,true
+ACT,GUIDANCE 2,1,1,,,,,,,false,true
+ACT,DATASTRUCT,2,3,,,,,,,false,true
+ACT,IM 1,2,3,,,,,,,false,true
+ACT,SPEC 3,2,3,,,,,,,false,true
+ACT,SPEC 4,2,3,,,,,,,false,true
+ACT,GE STS,2,3,,,,,,,false,true
+ACT,GE TCW,2,3,,,,,,,false,true
+ACT,REED 3,2,3,,,,,,,false,true
+ACT,PATHFIT 3,2,2,,,,,,,false,true
+ACT,APPSDEV,2,3,,,,,,,false,true
+ACT,OOP,2,3,,,,,,,false,true
+ACT,SPEC 5,2,3,,,,,,,false,true
+ACT,SPEC 6,2,3,,,,,,,false,true
+ACT,RIZAL,2,3,,,,,,,false,true
+ACT,REED 4,2,3,,,,,,,false,true
+ACT,PATHFIT 4,2,2,,,,,,,false,true
+ACT,PRAC,3,9,,,,,,,false,true
+BSIS,I-COMP,1,3,,,,,,,false,true
+BSIS,PROG 1,1,3,,,,,,,false,true
+BSIS,CMP,1,3,,,,,,,false,true
+BSIS,GE MMW,1,3,,,,,,,false,true
+BSIS,EP1,1,3,,,,,,,false,true
+BSIS,REED1,1,3,,,,,,,false,true
+BSIS,PE1,1,2,,,,,,,false,true
+BSIS,NSTP1,1,3,,,,,,,false,true
+BSIS,GUIDANCE1,1,1,,,,,,,false,true
+BSIS,IS,1,3,,,,,,,false,true
+BSIS,PROG2,1,3,,,,,,,false,true
+BSIS,WEB,1,3,,,,,,,false,true
+BSIS,GE RPH,1,3,,,,,,,false,true
+BSIS,EFCOM,1,3,,,,,,,false,true
+BSIS,REED2,1,3,,,,,,,false,true
+BSIS,PE2,1,2,,,,,,,false,true
+BSIS,NSTP2,1,3,,,,,,,false,true
+BSIS,GUIDANCE2,1,1,,,,,,,false,true
+BSIS,DATASTRUCT,2,3,,,,,,,false,true
+BSIS,PT,2,3,,,,,,,false,true
+BSIS,DM1,2,3,,,,,,,false,true
+BSIS,GE PC,2,3,,,,,,,false,true
+BSIS,GE TCW,2,3,,,,,,,false,true
+BSIS,GE AA,2,3,,,,,,,false,true
+BSIS,ACCTGA,2,3,,,,,,,false,true
+BSIS,REED3,2,3,,,,,,,false,true
+BSIS,PE3,2,2,,,,,,,false,true
+BSIS,DM2,2,3,,,,,,,false,true
+BSIS,QM,2,3,,,,,,,false,true
+BSIS,IM 1,2,3,,,,,,,false,true
+BSIS,NET1,2,3,,,,,,,false,true
+BSIS,GE STS,2,3,,,,,,,false,true
+BSIS,GE ET,2,3,,,,,,,false,true
+BSIS,GE UTS,2,3,,,,,,,false,true
+BSIS,REED4,2,3,,,,,,,false,true
+BSIS,PE4,2,2,,,,,,,false,true
+BSIS,ISELEC1,2,3,,,,,,,false,true
+BSIS,HCI,2,3,,,,,,,false,true
+BSIS,EA,2,3,,,,,,,false,true
+BSIS,DM3,3,3,,,,,,,false,true
+BSIS,SAD,3,3,,,,,,,false,true
+BSIS,ISELEC2,3,3,,,,,,,false,true
+BSIS,APPSDEV1,3,3,,,,,,,false,true
+BSIS,RESEARCH,3,3,,,,,,,false,true
+BSIS,ERP,3,3,,,,,,,false,true
+BSIS,TECHNO,3,3,,,,,,,false,true
+BSIS,DVA,3,3,,,,,,,false,true
+BSIS,DM4,3,3,,,,,,,false,true
+BSIS,PROJMGT1,3,3,,,,,,,false,true
+BSIS,ISELEC3,3,3,,,,,,,false,true
+BSIS,APPSDEV2,3,3,,,,,,,false,true
+BSIS,CAPSTONE1,3,3,,,,,,,false,true
+BSIS,SP,3,3,,,,,,,false,true
+BSIS,RIZAL,3,3,,,,,,,false,true
+BSIS,ISELEC4,4,3,,,,,,,false,true
+BSIS,ITREVIEW,4,3,,,,,,,false,true
+BSIS,IAS,4,3,,,,,,,false,true
+BSIS,SA,4,3,,,,,,,false,true
+BSIS,PROJMGT2,4,3,,,,,,,false,true
+BSIS,CAPSTONE2,4,3,,,,,,,false,true
+BSIS,STRATMGT,4,3,,,,,,,false,true
+BSIS,PRAC,4,9,,,,,,,false,true
+BSIS,SEMTOUR,4,3,,,,,,,false,true

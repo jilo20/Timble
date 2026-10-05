@@ -1,0 +1,3 @@
+employee_code,first_name,middle_initial,last_name,faculty_type,max_teaching_load,is_active
+DEMO-F1,Alex,,Reyes,FULL_TIME,30,True
+DEMO-F2,Sam,,Cruz,FULL_TIME,30,True

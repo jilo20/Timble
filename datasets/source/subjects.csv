@@ -1,0 +1,122 @@
+subject_code,subject_name,is_active
+I-COMP,Introduction to Computing,true
+PROG 1,Computer Programming 1,true
+WEB,Web Development,true
+CMP,Computing Math Prep,true
+GE MMW,Mathematics in the Modern World,true
+EP 1,English Proficiency Level 1,true
+REED 1,Initium Fidei: An Introduction to Doing Catholic Theology,true
+PATHFIT 1,Movement Competency Training,true
+NSTP 1,Civic Welfare Training Service (CWTS) 1 / Reserve Officers' Training Corps (ROTC) 1,true
+DISCRETE 1,Discrete Structures 1,true
+PROG 2,Computer Programming 2,true
+DIGITAL,Digital Logic Design,true
+GE RPH,Readings in Philippine History,true
+EFCOM,Effective Communication,true
+REED 2,Written That You May Believe: An Introduction to Biblical Exegesis,true
+NSTP 2,Civic Welfare Training Service (CWTS) 2 / Reserve Officers' Training Corps (ROTC) 2,true
+ECPROG,Enrichment Course in Computer Programming,true
+DATASTRUCT,Data Structures and Algorithms,true
+PT,Platform Technologies,true
+QM,Quantitative Methods,true
+ACCTG A,Financial Accounting and Reporting,true
+GE PC,Purposive Communication,true
+GE TCW,The Contemporary World,true
+GE AA,Art Appreciation,true
+REED 3,Our Restless Hearts: An Introduction to Doing Catholic Morality,true
+PE 3,Physical Education 3,true
+NET 1,Data Communications and Networking 1,true
+OOP,Object Oriented Programming,true
+IM 1,Information Management 1,true
+GE STS,"Science, Technology and Society",true
+GE ET,Ethics,true
+GE UTS,Understanding the Self,true
+DVA,Digital Visual Arts,true
+REED 4,A Call to Action: An Introduction to Catholic Social Thought,true
+PE 4,Physical Education 4,true
+EMC CORE 6,Human Computer Interaction,true
+SP,Social Issues and Professional Practice,true
+OS,Operating Systems,true
+IM 2,Information Management 2,true
+NET 2,Networking 2,true
+SOFTENG 1,Software Engineering 1,true
+TECHNO,Technopreneurship,true
+IAS 1,Information Assurance and Security 1,true
+IAS 2,Information Assurance and Security 2,true
+SIA,System Integration and Architecture 1,true
+RESEARCH,Methods of Research in Computing,true
+IM 3,Fundamentals of Data Analytics,true
+IPT,Integrative Programming and Technologies,true
+RIZAL,Life and Works of Dr. Jose Rizal,true
+CAPSTONE 1,Capstone Project 1,true
+SA,Systems Administration and Maintenance,true
+CAPSTONE 2,Capstone Project 2,true
+ITREVIEW,Certification Exam Review,true
+PRAC,Practicum,true
+SEMTOUR,Seminars and Tours,true
+ADV CMP,Calculus,true
+DISCRETE 2,Discrete Structures 2,true
+COMP-ORG 1,Computer Organization and Architecture,true
+ALGO,Analysis and Design of Algorithms,true
+AUTOMATA,Automata Theory and Formal Languages,true
+INTSYS,Intelligent Systems,true
+PL,Programming Languages,true
+COMPVIS,Computer Vision,true
+NLP,Natural Language Processing,true
+APPSDEV 2,Applications Development and Emerging Technologies 2,true
+SOFTENG 2,Software Engineering 2,true
+ML,Machine Learning,true
+THESIS 1,Thesis Writing 1,true
+IAS,Information Assurance and Security,true
+THESIS 2,Thesis Writing 2,true
+IS,Fundamentals of Information Systems,true
+DM1,Organizational and Management Concepts,true
+DM2,Financial Management,true
+ISELEC1,Fundamentals of Business Analytics,true
+EA,Enterprise Architecture,true
+DM3,Business Process Management,true
+SAD,System Analysis and Design,true
+ISELEC2,Enterprise Data Management,true
+ERP,Enterprise Resource Planning,true
+DM4,Evaluation of Business Performance,true
+PROJMGT1,IS Project Management 1,true
+ISELEC3,Analytics Modeling,true
+ISELEC4,Analytics Tools and Techniques,true
+PROJMGT2,IS Project Management 2,true
+STRATMGT,"IS Strategy, Management, and Acquisition",true
+EP 2,English Proficiency Level 2,true
+PATHFIT 3,"Menu of Dance, Sports, Martial Arts, Group Exercise, Outdoor and Adventure Activities 1",true
+PATHFIT4,Outdoor and Adventure Activities 2,true
+STATCOM,Introduction to Statistical Computing,true
+PATHFIT 4,"Menu of Dance, Sports, Martial Arts, Group Exercise, Outdoor and Adventure Activities 2",true
+DRAW,Freehand and Digital Drawing,true
+2D ANIM,Introduction to 2D Animation,true
+DISCRETE,Discrete Structures,true
+EMC SP 1,Applied Mathematics in Games,true
+EMC CORE 8,Script Writing and Storyboard Design,true
+3DUVMT,"3D Modeling, UV Mapping and Texturing",true
+DSOUND,Digital Sound,true
+EMC CORE 2,Introduction to Game Design and Development,true
+3D ANIM,Principles of 3D Animation,true
+GDD 2,Advanced Game Design and Production 1,true
+EMC SP 2,Applied Game Physics,true
+GPROG 1,Game Programming,true
+EMC SP 3,2D Game Programming,true
+GDD 3,Advanced Game Design II,true
+EMC SP 5,3D Game Programming,true
+CS ELEC 2,Computer Graphics Programming,true
+EMC SP 4,Artificial Intelligence in Games,true
+EMC SP 9,Game Production,true
+MRGAME,Mixed Reality Games,true
+MULTIGAME,Multiplayer Games,true
+EMC CORE 9,Game Design and Production Process,true
+SOFTENG,Software Engineering,true
+EMC SP 6,Advanced Game Programming (Game Engine),true
+EMC SP 7,Game Networking,true
+EMC SP 8,Advanced Game Design,true
+SPEC 1,Front End Development 1,true
+SPEC 2,Front End Development 2,true
+SPEC 4,Back-end Development 1,true
+APPSDEV,Applications Design and Development (with Capstone Project),true
+SPEC 5,User Experience Design,true
+SPEC 6,Back-end Development 2,true

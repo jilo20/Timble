@@ -1,0 +1,136 @@
+[
+  {
+    "file": "Dataset - Curriculum.csv",
+    "rows": 8,
+    "columns": [
+      "curriculum_id",
+      "effective_start",
+      "effective_end",
+      "program_id",
+      "program_code"
+    ],
+    "sha256": "8dc56ef6e1ebf864a44f3a7803d8e991f679778322b3eba504b0cf673bd9202f"
+  },
+  {
+    "file": "Dataset - curriculum_subject.csv",
+    "rows": 496,
+    "columns": [
+      "curriculum_subject_id",
+      "curriculum_id",
+      "subject_id",
+      "subject_code",
+      "curriculum_subject_name",
+      "units",
+      "lec_hours",
+      "lab_hours",
+      "subject_type",
+      "prerequisite_text",
+      "year_level_id",
+      "semester_id",
+      "requirement_type",
+      "elective_group_id",
+      "status"
+    ],
+    "sha256": "e4eafdeb4ce5ba6e12a1a55fc494f0678521bf3e7656d12a50e938532e260413"
+  },
+  {
+    "file": "Dataset - Faculty.csv",
+    "rows": 18,
+    "columns": [
+      "faculty_id",
+      "first_name",
+      "last_name",
+      "middle_initial",
+      "faculty_type",
+      "availability_status",
+      "status",
+      "max_teaching_load"
+    ],
+    "sha256": "8066ffd28a8f136e5c77a9131dcc503485f9cec9871989b4d1cba75ab59f1836"
+  },
+  {
+    "file": "Dataset - FacultyExpertise.csv",
+    "rows": 167,
+    "columns": [
+      "expertise_id",
+      "faculty_id",
+      "subject_id",
+      "subject_name",
+      "faculty_name"
+    ],
+    "sha256": "90bc9d8d690f75d5740d1d847f41de110104c17ceec0fed9694b8e75c1b95b1b"
+  },
+  {
+    "file": "Dataset - Programs.csv",
+    "rows": 6,
+    "columns": [
+      "program_id",
+      "program_code",
+      "program_name",
+      "max_year_level"
+    ],
+    "sha256": "4783177b06ab7cb45e112b901e14d717f6eed2fc7cb56be1653c81901caaa827"
+  },
+  {
+    "file": "Dataset - Room.csv",
+    "rows": 12,
+    "columns": [
+      "room_name",
+      "room_type",
+      "capacity",
+      "status"
+    ],
+    "sha256": "adfb72ae1a9a8b0b3e4d9b1c72e9a44ae49bf6703c4d1c4254fa3d78bd78be54"
+  },
+  {
+    "file": "Dataset - semester.csv",
+    "rows": 3,
+    "columns": [
+      "semester_id",
+      "semester_name",
+      "status",
+      "semester_order"
+    ],
+    "sha256": "664c5b1d2670c81d4f054fe7b423a2881d270a030a7f18d1e1468270502827c2"
+  },
+  {
+    "file": "Dataset - subjects.csv",
+    "rows": 139,
+    "columns": [
+      "subject_id",
+      "subject_name",
+      "subject_description",
+      "is_active"
+    ],
+    "sha256": "3e5a98c3f0d7b30fc806f8996bacaace0c0dc66c468619a69f93a58f4b02957d"
+  },
+  {
+    "file": "Dataset - Timeslot.csv",
+    "rows": 105,
+    "columns": [
+      "ti",
+      "day_pattern",
+      "monday_time",
+      "tuesday_time",
+      "wednesday_time",
+      "thursday_time",
+      "friday_time",
+      "saturday_time",
+      "total_units",
+      "total_hrs",
+      "subject_type"
+    ],
+    "sha256": "b95be406556a5ad49be0be2a6adca6a38345e9ac1a8ee02521bf34de1aae0f79"
+  },
+  {
+    "file": "Dataset - year_level.csv",
+    "rows": 4,
+    "columns": [
+      "year_level_id",
+      "year_level_name",
+      "year_level_order",
+      "status"
+    ],
+    "sha256": "bfe61cff3bc7edd286093530b13bb4f9d36af9e99fc93d7d0838bfa2e7681576"
+  }
+]

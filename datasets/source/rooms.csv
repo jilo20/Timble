@@ -1,0 +1,13 @@
+room_code,room_type,capacity,is_active
+IC1001,LAB,30,true
+IC1002,LAB,30,true
+IC1003,LAB,30,true
+IC1004,LAB,30,true
+IC1005,LAB,30,true
+IC1006,LAB,30,true
+IC1007,LAB,30,true
+IC1008,LAB,30,true
+IC1009,LECTURE,40,true
+IC1601,LECTURE,40,true
+IC1602,LECTURE,40,true
+IC1603,LECTURE,40,true

@@ -1,0 +1,12 @@
+{
+  "database_engine": "mysql",
+  "zip_files_imported": 10,
+  "status": "OPTIMAL",
+  "assignments": 12,
+  "objective": 70.0,
+  "best_bound": 70.0,
+  "mip_gap": 0.0,
+  "nodes": 1,
+  "elapsed_seconds": 0.4293216000078246,
+  "data_changes": "rolled back"
+}
