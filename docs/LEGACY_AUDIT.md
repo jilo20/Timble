@@ -4,7 +4,7 @@ Reference project: ../Timble_ (read only). No database or migrations are reused.
 | Classification | Reference | Decision |
 |---|---|---|
 | REUSE | frontend/public/logo.svg; src/index.css brand colors | Preserve logo and green/brown palette. |
-| REFACTOR | sidebar, tables, forms, import preview UX | Feature-based React components, accessible controls and revised navigation. |
+| REFACTOR | sidebar, tables, forms, import preview UX | Match the reference dark brown 220px sidebar (44px collapsed), grouped navigation, warm page background, compact tables and forms, and Data Entry entity panel; retain V2 resources and workflows. |
 | REFACTOR | offered_subject_service.py demand_of and shared aggregation | Preserve prerequisite failure adjustment, MAX within program, SUM across programs; remove obsolete configuration. |
 | REFACTOR | historical_demand_service.py | Prior academic year, canonical subject relationships and alias resolution. Missing data is an error, never zero. |
 | REFACTOR | section_materialization_service.py | Transactional, idempotent generation; retain program provenance. Shared-subject totals are reported across programs; sections remain program-specific because the revised offering has one program_subject FK. |

@@ -2,23 +2,22 @@ import { chromium } from "../frontend/node_modules/playwright/index.mjs";
 import fs from "node:fs";
 import assert from "node:assert/strict";
 const browser = await chromium.launch({ headless: true, channel: "msedge" });
-const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+const page = await browser.newPage({
+  viewport: { width: 1440, height: 1000 },
+  reducedMotion: "reduce",
+});
 const errors = [];
 page.on("pageerror", (e) => errors.push(e.message));
 fs.mkdirSync("artifacts", { recursive: true });
 try {
-  await page.goto("http://127.0.0.1:5173/");
+  await page.goto(process.env.TIMBLE_TEST_URL || "http://127.0.0.1:15173/");
   await page.getByLabel("Username").fill("browser-test");
   await page
     .getByLabel("Password", { exact: true })
     .fill(process.env.TIMBLE_TEST_PASSWORD);
   await page.getByRole("button", { name: "Sign in", exact: true }).click();
-  await page
-    .getByRole("heading", { name: "A clear path to your next timetable." })
-    .waitFor();
-  await page
-    .getByRole("button", { name: "Bulk management", exact: true })
-    .click();
+  await page.getByRole("heading", { name: "Overview", exact: true }).waitFor();
+  await page.getByRole("button", { name: "Data Import", exact: true }).click();
   await page
     .getByLabel("Choose a dataset ZIP", { exact: false })
     .setInputFiles("datasets/demo-datasets.zip");
@@ -40,10 +39,34 @@ try {
   );
   assert.equal(afterImport, 1, "ZIP commit imports the bundled program");
   await page.getByRole("button", { name: "Overview", exact: true }).click();
+  await page.getByRole("heading", { name: "Overview", exact: true }).waitFor();
   await page
-    .getByRole("heading", { name: "A clear path to your next timetable." })
+    .locator(".stats article")
+    .first()
+    .getByText("1", { exact: true })
     .waitFor();
   await page.screenshot({ path: "artifacts/dashboard.png", fullPage: true });
+  await page
+    .getByRole("button", { name: "Collapse navigation", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Expand navigation", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "DATA MANAGEMENT", exact: true })
+    .click();
+  assert.equal(
+    await page
+      .getByRole("button", { name: "Data Entry", exact: true })
+      .isVisible(),
+    false,
+  );
+  await page
+    .getByRole("button", { name: "DATA MANAGEMENT", exact: true })
+    .click();
+  await page.getByRole("button", { name: "Data Entry", exact: true }).click();
+  await page.getByRole("button", { name: "Subjects", exact: true }).click();
+  await page.getByRole("heading", { name: "Subjects", exact: true }).waitFor();
   await page.getByRole("button", { name: "Programs", exact: true }).click();
   await page.getByRole("button", { name: "Add record", exact: true }).click();
   const dialog = page.getByRole("dialog");
@@ -52,7 +75,10 @@ try {
   await dialog.getByLabel("Max Year Level").fill("4");
   await dialog.getByRole("button", { name: "Save record" }).click();
   await page.getByRole("cell", { name: "BROWSER", exact: true }).waitFor();
-  await page.getByRole("button", { name: "Forecasting", exact: true }).click();
+  await page.screenshot({ path: "artifacts/data-entry.png", fullPage: true });
+  await page
+    .getByRole("button", { name: "Forecast Generation", exact: true })
+    .click();
   await page.getByLabel("Program scope").selectOption({ label: "DEMO-CS" });
   await page.getByRole("button", { name: "Generate", exact: true }).click();
   await page
@@ -73,7 +99,7 @@ try {
     .click();
   await page.getByRole("heading", { name: /Course offerings/ }).waitFor();
   await page
-    .getByRole("button", { name: "Scheduling studio", exact: true })
+    .getByRole("button", { name: "Generate Timetable", exact: true })
     .click();
   await page.getByLabel("Finalized forecast").selectOption({ index: 1 });
   await page.getByRole("button", { name: "Generate schedule" }).click();
@@ -112,6 +138,26 @@ try {
   await page.getByRole("heading", { name: "Solver measurements" }).waitFor();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.screenshot({ path: "artifacts/mobile.png", fullPage: true });
+  await page.getByRole("button", { name: "Toggle navigation" }).click();
+  await page.getByRole("button", { name: "Data Entry", exact: true }).click();
+  await page
+    .getByRole("heading", { name: "Data Entry", exact: true })
+    .waitFor();
+  await page.getByRole("button", { name: "Rooms", exact: true }).click();
+  await page.getByRole("heading", { name: "Rooms", exact: true }).waitFor();
+  await page.getByRole("cell", { name: "DEMO-L30", exact: true }).waitFor();
+  await page.screenshot({
+    path: "artifacts/mobile-data-entry.png",
+    fullPage: true,
+  });
+  await page.getByRole("button", { name: "Toggle navigation" }).click();
+  await page.keyboard.press("Escape");
+  assert.equal(
+    await page
+      .getByRole("button", { name: "Data Import", exact: true })
+      .isVisible(),
+    false,
+  );
   const overflow = await page.evaluate(
     () => document.documentElement.scrollWidth > innerWidth,
   );

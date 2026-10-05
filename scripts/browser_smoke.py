@@ -14,6 +14,11 @@ work = ROOT / ".work"
 work.mkdir(exist_ok=True)
 os.environ["SQLITE_PATH"] = str(work / f"browser-{uuid.uuid4().hex}.sqlite3")
 os.environ["TIMBLE_TEST_PASSWORD"] = secrets.token_urlsafe(24)
+backend_port = os.environ.get("TIMBLE_TEST_BACKEND_PORT", "18000")
+frontend_port = os.environ.get("TIMBLE_TEST_FRONTEND_PORT", "15173")
+os.environ["TIMBLE_API_TARGET"] = f"http://127.0.0.1:{backend_port}"
+os.environ["TIMBLE_TEST_URL"] = f"http://127.0.0.1:{frontend_port}"
+os.environ["CSRF_TRUSTED_ORIGINS"] = os.environ["TIMBLE_TEST_URL"]
 os.environ["DJANGO_SETTINGS_MODULE"] = "config.settings"
 sys.path.insert(0, str(ROOT / "backend"))
 import django
@@ -32,7 +37,7 @@ handles = []
 try:
     for command, cwd, name in [
         (
-            [sys.executable, "manage.py", "runserver", "127.0.0.1:8000", "--noreload"],
+            [sys.executable, "manage.py", "runserver", f"127.0.0.1:{backend_port}", "--noreload"],
             ROOT / "backend",
             "backend",
         ),
@@ -43,7 +48,7 @@ try:
                 "--host",
                 "127.0.0.1",
                 "--port",
-                "5173",
+                frontend_port,
                 "--strictPort",
             ],
             ROOT / "frontend",
@@ -55,7 +60,10 @@ try:
         processes.append(
             subprocess.Popen(command, cwd=cwd, stdout=log, stderr=log, creationflags=flags)
         )
-    for url in ["http://127.0.0.1:8000/api/session/", "http://127.0.0.1:5173/"]:
+    for url in [
+        os.environ["TIMBLE_API_TARGET"] + "/api/session/",
+        os.environ["TIMBLE_TEST_URL"] + "/",
+    ]:
         for retry in range(40):
             if any(p.poll() is not None for p in processes):
                 raise RuntimeError(

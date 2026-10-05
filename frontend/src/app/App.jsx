@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-  LayoutDashboard,
-  Upload,
-  ChartNoAxesCombined,
-  CalendarDays,
+  ChevronRight,
+  ChevronsLeft,
+  ClipboardPenLine,
   LogOut,
   Menu,
 } from "lucide-react";
@@ -14,13 +13,16 @@ import Catalog from "../features/master-data/Catalog";
 import Bulk from "../features/bulk-management/Bulk";
 import Forecasts from "../features/forecasting/Forecasts";
 import Scheduling from "../features/scheduling/Scheduling";
+
 export default function App() {
   const [session, setSession] = useState(null),
     [schema, setSchema] = useState({}),
     [page, setPage] = useState(location.hash.slice(1) || "dashboard"),
     [error, setError] = useState(""),
     [credentials, setCredentials] = useState({ username: "", password: "" }),
-    [menu, setMenu] = useState(false);
+    [menu, setMenu] = useState(false),
+    [sidebarOpen, setSidebarOpen] = useState(true),
+    [collapsed, setCollapsed] = useState({});
   useEffect(() => {
     api("session/")
       .then(setSession)
@@ -37,6 +39,14 @@ export default function App() {
     window.addEventListener("hashchange", fn);
     return () => window.removeEventListener("hashchange", fn);
   }, []);
+  useEffect(() => {
+    if (!menu) return;
+    const close = (event) => {
+      if (event.key === "Escape") setMenu(false);
+    };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [menu]);
   const navigate = (p) => {
     location.hash = p;
     setPage(p);
@@ -66,10 +76,11 @@ export default function App() {
         >
           <div className="brand">
             <img src="/logo.svg" alt="" />
-            <strong>TIMBLE</strong>
+            <strong>
+              TIMBLE<small>University Timetabling</small>
+            </strong>
           </div>
-          <p className="eyebrow">ACADEMIC PLANNING WORKSPACE</p>
-          <h1>Welcome back.</h1>
+          <h1>Welcome back</h1>
           <p>Sign in to manage your institution’s academic plans.</p>
           <Alert>{error}</Alert>
           <label>
@@ -99,69 +110,116 @@ export default function App() {
         </form>
       </main>
     );
-  const primary = [
-    ["dashboard", "Overview", LayoutDashboard],
-    ["bulk", "Bulk management", Upload],
-    ["forecast", "Forecasting", ChartNoAxesCombined],
-    ["schedule", "Scheduling studio", CalendarDays],
+  const isCatalog = Boolean(schema[page]);
+  const modules = [
+    [
+      "data",
+      "DATA MANAGEMENT",
+      [
+        ["dashboard", "Overview"],
+        ["bulk", "Data Import"],
+        ["programs", "Data Entry"],
+      ],
+    ],
+    ["forecast", "FORECASTING", [["forecast", "Forecast Generation"]]],
+    ["timetable", "TIMETABLING", [["schedule", "Generate Timetable"]]],
   ];
   return (
-    <div className="shell">
-      <aside className={menu ? "open" : ""}>
-        <a className="brand" href="#dashboard">
-          <img src="/logo.svg" alt="Timble logo" />
-          <strong>
-            TIMBLE<small>Academic planning</small>
-          </strong>
-        </a>
-        <nav aria-label="Main navigation">
-          <span className="nav-label">WORKSPACE</span>
-          {primary.map(([p, label, Icon]) => (
-            <button
-              key={p}
-              className={page === p ? "active" : ""}
-              onClick={() => navigate(p)}
-            >
-              <Icon size={18} />
-              {label}
-            </button>
-          ))}
-          <span className="nav-label">MASTER DATA</span>
-          {Object.keys(schema).map((p) => (
-            <button
-              key={p}
-              className={page === p ? "active" : ""}
-              onClick={() => navigate(p)}
-            >
-              <span className="nav-dot" />
-              {title(p)}
-            </button>
-          ))}
+    <div className={"shell" + (sidebarOpen ? "" : " sidebar-collapsed")}>
+      <a
+        className="skip-link"
+        href="#main-content"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("main-content").focus();
+        }}
+      >
+        Skip to content
+      </a>
+      {menu && (
+        <button
+          className="nav-backdrop"
+          aria-label="Close navigation"
+          onClick={() => setMenu(false)}
+        />
+      )}
+      <aside className={"sidebar" + (menu ? " open" : "")}>
+        <div className="sidebar-brand">
+          <a
+            className="brand"
+            href="#dashboard"
+            onClick={() => navigate("dashboard")}
+          >
+            <img src="/logo.svg" alt="" />
+            <strong>
+              TIMBLE<small>University Timetabling</small>
+            </strong>
+          </a>
+          <button
+            className="sidebar-toggle"
+            aria-label={
+              sidebarOpen ? "Collapse navigation" : "Expand navigation"
+            }
+            aria-expanded={sidebarOpen}
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+          >
+            {sidebarOpen ? (
+              <ChevronsLeft size={16} />
+            ) : (
+              <img src="/logo.svg" alt="" />
+            )}
+          </button>
+        </div>
+        <nav aria-label="Main navigation" className="main-nav">
+          {modules.map(([id, label, links]) => {
+            const active = links.some(
+              ([p]) => page === p || (p === "programs" && isCatalog),
+            );
+            return (
+              <div className="nav-module" key={id}>
+                <button
+                  className={"nav-label" + (active ? " current" : "")}
+                  aria-expanded={!collapsed[id]}
+                  aria-controls={"nav-" + id}
+                  onClick={() =>
+                    setCollapsed({ ...collapsed, [id]: !collapsed[id] })
+                  }
+                >
+                  {label}
+                  <ChevronRight
+                    size={12}
+                    className={!collapsed[id] ? "rotated" : ""}
+                  />
+                </button>
+                <div id={"nav-" + id} hidden={Boolean(collapsed[id])}>
+                  {links.map(([p, name]) => {
+                    const selected =
+                      page === p || (p === "programs" && isCatalog);
+                    return (
+                      <button
+                        key={p}
+                        className={selected ? "active" : ""}
+                        aria-current={selected ? "page" : undefined}
+                        onClick={() => navigate(p)}
+                      >
+                        {name}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </nav>
         <div className="sidebar-foot">
-          <span className="status-dot" />
-          Timble V2 · Pyomo + HiGHS
-        </div>
-      </aside>
-      <div className="workspace">
-        <header className="topbar">
-          <div>
-            <button
-              className="mobile icon"
-              aria-label="Toggle navigation"
-              onClick={() => setMenu(!menu)}
-            >
-              <Menu />
-            </button>
-            <span>Workspace</span>
-            <span className="muted"> / </span>
-            <strong>{title(page)}</strong>
-          </div>
           <div className="user">
             <span className="avatar">
               {session.username.slice(0, 1).toUpperCase()}
             </span>
-            {session.username}
+            <div className="user-details">
+              <strong>{session.username}</strong>
+              <small>University Office</small>
+            </div>
             <button
               className="icon"
               aria-label="Sign out"
@@ -173,11 +231,27 @@ export default function App() {
                 }
               }}
             >
-              <LogOut size={17} />
+              <LogOut size={16} />
             </button>
           </div>
+        </div>
+      </aside>
+      <div className="workspace">
+        <header className="mobile-header">
+          <button
+            className="icon"
+            aria-label="Toggle navigation"
+            aria-expanded={menu}
+            onClick={() => {
+              setSidebarOpen(true);
+              setMenu(!menu);
+            }}
+          >
+            <Menu size={21} />
+          </button>
+          <strong>TIMBLE</strong>
         </header>
-        <main className="content">
+        <main className="content" id="main-content" tabIndex={-1}>
           <Alert>{error}</Alert>
           {page === "dashboard" ? (
             <Dashboard navigate={navigate} />
@@ -188,14 +262,41 @@ export default function App() {
           ) : page === "schedule" ? (
             <Scheduling />
           ) : schema[page] ? (
-            <Catalog resource={page} schema={schema} />
+            <>
+              <div className="page-heading">
+                <div>
+                  <h1>
+                    <ClipboardPenLine /> Data Entry
+                  </h1>
+                  <p>
+                    Create and maintain scheduling inputs and academic master
+                    data.
+                  </p>
+                </div>
+              </div>
+              <section className="panel data-entry">
+                <nav className="entity-nav" aria-label="Data categories">
+                  <span>Entities</span>
+                  {Object.keys(schema).map((p) => (
+                    <button
+                      key={p}
+                      className={page === p ? "active" : ""}
+                      aria-current={page === p ? "page" : undefined}
+                      onClick={() => navigate(p)}
+                    >
+                      {title(p)}
+                    </button>
+                  ))}
+                </nav>
+                <div className="entity-content">
+                  <Catalog key={page} resource={page} schema={schema} />
+                </div>
+              </section>
+            </>
           ) : (
             <Busy />
           )}
         </main>
-        <footer className="app-footer">
-          TIMBLE · Academic planning with mathematical clarity.
-        </footer>
       </div>
     </div>
   );

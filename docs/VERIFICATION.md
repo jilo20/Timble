@@ -23,6 +23,14 @@ Full MySQL unit-test database creation was denied by the database account (1044)
 
 The actual measurements are in `artifacts/verified-demo-run.json` and `artifacts/database-verification.json`. These contain synthetic academic records only. Runtime is an observation, not a performance guarantee.
 
+## Reference design verification
+
+The interface follows the read-only `../Timble_` reference: dark sidebar, collapsible module groups, green active navigation, warm background, icon headings, compact tables/forms, and the Data Entry entity panel. The V2 import, forecast, and scheduling workflows remain functional.
+
+After the design update, all five frontend tests and the production build passed. Edge verified the full ZIP-to-schedule workflow (12 assignments, OPTIMAL, objective 70, zero violations, no browser errors), desktop sidebar collapse/expand, module collapse/expand, entity navigation, and mobile navigation with Escape dismissal. Screenshots include `artifacts/data-entry.png` and `artifacts/mobile-data-entry.png`.
+
+The browser runner now uses isolated ports 18000/15173 (overridable with `TIMBLE_TEST_BACKEND_PORT` and `TIMBLE_TEST_FRONTEND_PORT`) and an isolated SQLite database. Its CSRF origin and Vite proxy are set only for the test process, allowing the user's existing development servers to keep running.
+
 ## Outstanding institutional data
 
 The real archive has no block sections or historical enrollment. Meeting-pattern conversion and prerequisite interpretation require confirmation. Faculty expertise does not establish explicit permissions. Ambiguous subject identities remain in the audit package. The application is executable and verified; full institutional data readiness is not claimed.

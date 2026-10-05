@@ -39,8 +39,9 @@ export default function Forecasts() {
     <>
       <div className="page-heading">
         <div>
-          <p className="eyebrow">DEMAND PLANNING</p>
-          <h1>Enrollment forecasting</h1>
+          <h1>
+            <Calculator /> Forecast Generation
+          </h1>
           <p>
             Trace historical demand through prerequisites to teaching sections.
           </p>

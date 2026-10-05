@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Upload, Download, Package } from "lucide-react";
+import { Upload, Download, UploadCloud } from "lucide-react";
 import { title, message } from "../../services/api";
 import { Alert, Table } from "../../components/Common";
 
@@ -51,13 +51,13 @@ export default function Bulk({ schema }) {
     <>
       <div className="page-heading">
         <div>
-          <p className="eyebrow">DATA WORKSPACE</p>
-          <h1>Bulk management</h1>
+          <h1>
+            <UploadCloud /> Data Import
+          </h1>
           <p>
             Upload a dataset ZIP to validate and import all ten files together.
           </p>
         </div>
-        <Package size={28} />
       </div>
       <Alert>{error}</Alert>
       <section className="panel padded">

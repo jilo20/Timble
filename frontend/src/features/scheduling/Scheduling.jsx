@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Play, Info } from "lucide-react";
+import { Play, Info, CalendarDays } from "lucide-react";
 import { api, send } from "../../services/api";
 import { Alert, Badge, Table, Modal, Busy } from "../../components/Common";
 import Demonstration from "./Demonstration";
@@ -95,8 +95,9 @@ export default function Scheduling() {
     <>
       <div className="page-heading">
         <div>
-          <p className="eyebrow">CONSTRAINT OPTIMIZATION</p>
-          <h1>Scheduling studio</h1>
+          <h1>
+            <CalendarDays /> Generate Timetable
+          </h1>
           <p>Build an explainable timetable from finalized course offerings.</p>
         </div>
         <Badge>PYOMO + HiGHS</Badge>

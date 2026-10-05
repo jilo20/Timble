@@ -113,8 +113,7 @@ export default function Catalog({ resource, schema }) {
     <>
       <div className="page-heading">
         <div>
-          <p className="eyebrow">MASTER DATA</p>
-          <h1>{title(resource)}</h1>
+          <h2>{title(resource)}</h2>
           <p>Maintain the academic records used throughout Timble.</p>
         </div>
         <button
